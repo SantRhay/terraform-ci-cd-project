@@ -22,3 +22,5 @@ GitHub Actions
 terraform validate
 terraform plan
 
+## CI/CD Pepeline Test
+Pipeline configured with GitHub Actions and Terraform.
