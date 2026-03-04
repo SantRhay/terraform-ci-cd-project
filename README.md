@@ -1,26 +1,41 @@
-# Terraform CI/CD Pipeline Project
+# Terraform CI/CD Pipeline with AWS
 
-Este projeto demonstra a automação de infraestrutura usando Terraform e GitHub Actions.
+Este projeto demonstra uma pipeline DevOps completa utilizando Terraform e GitHub Actions para validar infraestrutura automaticamente.
 
-## Tecnologias
+## Arquitetura
+
+GitHub → GitHub Actions → Terraform → AWS
+
+## O que o pipeline faz
+
+1. Checkout do código
+2. Instala Terraform
+3. Configura credenciais AWS
+4. Executa Terraform Init
+5. Executa Terraform Validate
+6. Executa Terraform Plan automaticamente
+
+## Tecnologias utilizadas
 
 - Terraform
 - AWS
 - GitHub Actions
-- Linux
+- Infrastructure as Code (IaC)
+- CI/CD
+
+## Estrutura do projeto
+
+.
+├── main.tf
+├── variables.tf
+├── outputs.tf
+└── .github/workflows/terraform.yml
 
 ## Objetivo
 
-Criar um pipeline de CI/CD para validar infraestrutura como código automaticamente.
+Automatizar validação de infraestrutura utilizando CI/CD.
 
-## Pipeline
+## Autor
 
-git push
-↓
-GitHub Actions
-↓
-terraform validate
-terraform plan
-
-## CI/CD Pepeline Test
-Pipeline configured with GitHub Actions and Terraform.
+Rayane Santana  
+DevOps & Cloud Enthusiast
